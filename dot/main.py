@@ -47,24 +47,39 @@
 # # 16. elif
 # # 17. match
 
-signal = input("Signal color? ")
+# signal = input("Signal color? ")
 
-# # if signal == "red":
-# #     print("Stop!!!!----------")
-# # elif signal == "yell":
-# #     print("Slow down!-----")
-# # elif signal == "blue" or signal == "green":
-# #     print("Go-----")
-# # else:
-# #     print("Invalid color")
+# # # if signal == "red":
+# # #     print("Stop!!!!----------")
+# # # elif signal == "yell":
+# # #     print("Slow down!-----")
+# # # elif signal == "blue" or signal == "green":
+# # #     print("Go-----")
+# # # else:
+# # #     print("Invalid color")
 
-# # python3.10の機能らしい。。。
-match signal:
-    case "red":
-        print("Stop!!!!----!!!!!")
-    case "yellow":
-        print("Slow down!")
-    case "blue" | "green":
-        print("Go!")
-    case _:
-        print("Invalid signal color...")
+# # # python3.10の機能らしい。。。
+# match signal:
+#     case "red":
+#         print("Stop!!!!----!!!!!")
+#     case "yellow":
+#         print("Slow down!")
+#     case "blue" | "green":
+#         print("Go!")
+#     case _:
+#         print("Invalid signal color...")
+
+#--------------------------------------------------
+# 18. if else を一行で
+initial_balance = 20_000
+# if float(initial_balance) >= 100000:
+#     RATE = 1.1
+# else:
+#     RATE = 1.01
+
+# 上と同じ意味
+RATE = 1.1 if initial_balance >= 100_000 else 1.01
+
+print(f"Current rate: {RATE:.2f}")
+print(f"Year 0: {initial_balance:,.2f}")
+print(f"Year 1: {initial_balance * RATE:,.2f}")
