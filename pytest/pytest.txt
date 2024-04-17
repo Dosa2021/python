@@ -1,0 +1,5 @@
+・printを出力
+pytest test_sec2_2.py  -s
+
+・詳細出力
+pytest test_sec2_2.py  -v
