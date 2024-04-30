@@ -9,7 +9,9 @@ import pytest
 
 @pytest.fixture()
 def hoge():
-    print('step_function-fix----')
+    print('start----')
+    yield
+    print('end----')
     message = "hoge"
     return message
 
