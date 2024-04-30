@@ -3,3 +3,7 @@ pytest test_sec2_2.py  -s
 
 ・詳細出力
 pytest test_sec2_2.py  -v
+
+
+@pytest.fixture 前処理、後処理に引数を渡す
+https://zenn.dev/tukaneeee/articles/3fe4e5b3f6111e
