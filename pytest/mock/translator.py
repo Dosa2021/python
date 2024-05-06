@@ -1,5 +1,7 @@
 class GoogleTranslator():
     def convert(self, text_original, language_original_name, language_translator_name):
+        if language_translator_name == '日本語':
+            return "俺はジャイアン"
         print('convert')
         print(text_original)
         print(language_original_name)
