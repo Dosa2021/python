@@ -1,10 +1,11 @@
 class GoogleTranslator():
     def get_language_id(self, language_name):
-        languages = {
-            '日本語': 'ja',
-            '英語': 'en'
-        }
-        return languages[language_name]
+        pass
+        # languages = {
+        #     '日本語': 'ja',
+        #     '英語': 'en'
+        # }
+        # return languages[language_name]
 
     def convert(self, text_original, language_original_name, language_translator_name):
         language = self.get_language_id(language_translator_name)
